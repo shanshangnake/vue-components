@@ -1,0 +1,14 @@
+{
+  "name": "vuedemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "vue serve App.vue",
+    "build": "vue build App.vue"
+  },
+  "dependencies": {
+    "file-loader": "^5.0.2",
+    "url-loader": "^3.0.0"
+  }
+}

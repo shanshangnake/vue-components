@@ -20,7 +20,6 @@ export default {
   },
   methods: {
     mackFun(params) {
-      console.log(params, this.mackActive);
       // 方法一
       // this.$parent.mackActive(params);
       // 方法二      

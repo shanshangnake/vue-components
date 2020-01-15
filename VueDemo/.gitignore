@@ -1,6 +1,17 @@
-node_modules/*
-/node_modules/*
-dist/*
+
+# bulid
 dist
-*.json.gz
-*.json
+dist/*
+
+# env 
+.env
+
+# eslint
+.eslintrc.js
+
+# node_modeles
+node_modeles
+node_modules/
+node_modeles/*
+
+node_modeles/*.json

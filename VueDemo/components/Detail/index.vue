@@ -4,10 +4,11 @@
       <a class="list-icon" :class="{'active': layout == 'list'}" @click="layout = 'list'"></a>
       <a class="grid-icon" :class="{'active': layout == 'grid'}" @click="layout = 'grid'"></a>
     </div>
+    <img class="u-span" src="./favicon.png" alt="">
     <ul :class="layout">
       <li v-for="(a, index) in articles" :key="index">
         <a :href="a.url" target="_blank">
-          <img :src="layout == 'grid' ? a.image.large : a.image.small" alt="">
+          <img class="u-span" :src="layout == 'grid' ? a.image.large : a.image.small" alt="">
           <p v-if="layout == 'list'">{{a.title}}</p>
         </a>
       </li>
@@ -22,26 +23,26 @@ export default {
     articles: [
       {
         title: 'first',
-        url: "https://www.runoob.com/html/html-tutorial.html",
+        url: "#",
         image: {
-            "large": "https://static.runoob.com/images/mix/htmlbig.png",
-            "small": "https://static.runoob.com/images/icon/html.png"
+            "large": "./favicon.png",
+            "small": "./favicon.png"
         }
       },
       {
         title: 'first',
-        url: "https://www.runoob.com/html/html-tutorial.html",
+        url: "#",
         image: {
-            "large": "https://static.runoob.com/images/mix/htmlbig.png",
-            "small": "https://static.runoob.com/images/icon/html.png"
+            "large": "favicon.png",
+            "small": "favicon.png"
         }
       },
       {
         title: 'first',
-        url: "https://www.runoob.com/html/html-tutorial.html",
+        url: "#",
         image: {
-            "large": "https://static.runoob.com/images/mix/htmlbig.png",
-            "small": "https://static.runoob.com/images/icon/html.png"
+            "large": "favicon.png",
+            "small": "favicon.png"
         }
       }
     ]
@@ -49,6 +50,11 @@ export default {
 }
 </script>
 <style scoped>
+.u-span {
+  width: 200px;
+  height: 200px;
+  /* background-image: url('favicon.png'); */
+}
 a, a:visited {
   outline: none;
   color: #389dc1;
